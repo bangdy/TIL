@@ -5,16 +5,19 @@ const PlacePointer = (props) => {
 
   if (selected) {
     return (
-      <Box
-        sx={{
-          p: 2,
+      <div
+        style={{
           border: "1px dashed grey",
-          width: 50,
-          backgroundColor: "yellow"
+          backgroundColor: "yellow",
+          width: "fit-content",
+          height: "fit-content",
+          display: "inline-block",
+          position: "relative",
+          top: -40
         }}
       >
-        {text}
-      </Box>
+        <p style={{ width: "max-content", padding: "0 20px" }}>{text}</p>
+      </div>
     );
   } else {
     return (
